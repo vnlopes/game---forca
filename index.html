@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+    *{
+        font-family: "Archivo", sans-serif;
+     }   
+    </style>
+    
+
+  <body class="bg-black min-h-screen flex items-center justify-center bg-gradient-to-t from-[#0057DA] from-10% via-black to-black">
+    <main
+      class="max-w-[1920px] min-w-[1440px] items-center flex flex-col h-screen px-10"
+    >
+      <header
+        class="w-screen flex gap-2 justify-center border-b border-zinc-600 h-[70px] items-center"
+      >
+        <svg
+          class="fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M128,80A32,32,0,1,0,96,48,32,32,0,0,0,128,80Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,128,32ZM230.86,132.12a8,8,0,0,1-11,2.74c-.35-.21-35.11-20.59-83.88-22.67V149l62,69.73a8,8,0,1,1-12,10.62L128,164,70,229.31a8,8,0,1,1-12-10.62L120,149V112.18c-49,2.08-83.52,22.46-83.88,22.68a8,8,0,1,1-8.23-13.72C29.6,120.11,70.45,96,128,96s98.4,24.11,100.12,25.14A8,8,0,0,1,230.86,132.12Z"
+          ></path>
+        </svg>
+        <span class="text-white font-regular text-2xl"
+          >Jogo da <span class="font-bold">Forca</span></span
+        >
+      </header>
+      <section class="w-[800px] flex justify-center mt-[100px]">
+        <span class="text-white font-regular text-4xl">
+          Se <span class="font-bold text-[#0057DA]">divirta</span> com os amigos e <span class="font-bold text-[#0057DA]">crie estratégias</span> para descobrir a palavra certa!
+        </span>
+      </section>
+
+
+      <main class="w-[800px] flex gap-6 mt-10 flex-col">
+        <section class="text-white flex flex-col w-[800px]">
+            <span class="text-2xl font-semibold">
+                Escreva uma palavra para que seu adversário descubra!
+            </span>
+            <span class="font-regular text-zinc-400">Seja bem criativo. Lembre-se que é uma competição</span>
+        </section>
+        <input class="border border-dashed bg-transparent w-[400px] h-12 text-2xl outline-none text-white text-zinc-400 px-4" type="password">
+        <button class="border border-dashed border-black text-zinc-100 bg-[#0057DA] p-2 rounded font-semibold py-[10px] w-[250px]">Bora pro game!</button>
+      </main>
+    </main>
+  </body>
+  <script src=" function/index.js"></script>
+</html>

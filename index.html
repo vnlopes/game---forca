@@ -15,8 +15,54 @@
      }   
     </style>
     
+    
+    <body class="bg-black min-h-screen flex items-center justify-center bg-gradient-to-t from-[#000A18] to-black overflow-x-hidden">
+    <main
+      class="forca max-w-[1920px] absolute bg-black hidden w-[1440px] items-center flex flex-col h-screen px-10 bg-gradient-to-t from-[#000A18] to-black"
+    >
+      <header
+        class="w-screen flex gap-2 justify-center border-b border-zinc-600 h-[70px] items-center"
+      >
+        <svg
+          class="fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M128,80A32,32,0,1,0,96,48,32,32,0,0,0,128,80Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,128,32ZM230.86,132.12a8,8,0,0,1-11,2.74c-.35-.21-35.11-20.59-83.88-22.67V149l62,69.73a8,8,0,1,1-12,10.62L128,164,70,229.31a8,8,0,1,1-12-10.62L120,149V112.18c-49,2.08-83.52,22.46-83.88,22.68a8,8,0,1,1-8.23-13.72C29.6,120.11,70.45,96,128,96s98.4,24.11,100.12,25.14A8,8,0,0,1,230.86,132.12Z"
+          ></path>
+        </svg>
+       <a href="index.html">
+        <span class="text-white font-regular text-2xl"
+        >Jogo da <span class="font-black text-[#0057DA]">Forca</span></span
+      >
+       </a>
+      </header>
+        <section class="w-full p-10 flex justify-center lg:justify-start">
+          <svg class="w-80" stroke-linecap="round" viewBox="0 0 400 400"><g fill="none" stroke="#b7b7b7" stroke-width="10"></g><g id="gallows"><path d="M297 71v46.7M290.5 101.2L297 99l6.7-2.2M290.5 108.6l6.6-2.2 6.7-2.2M290.5 116l6.6-2.3 6.7-2.2M284.5 155.3c-7-7-7-18 0-25l12.6-12.6 12.6 12.5c7 7 7 18.2 0 25-3.4 3.6-8 5.3-12.5 5.3s-9-1.7-12.5-5.2z" fill="none" stroke="#f7b239" stroke-width="5.8"></path><path d="M217.2 73.2L197.5 93l-76.8 76.7v-42L155.5 93 175.2 73h42z" fill="#b27214"></path><path d="M39 27h35.5v46.2H39z" fill="#b27214"></path><path d="M55.6 27h19v46.2h-19z" fill="#995c0d"></path><path d="M338 27v46.2H120.6V27H338z" fill="#b27214"></path><path d="M217.2 73.2L197.5 93h-42L175.2 73h42z" fill="#995c0d"></path><path d="M120.7 169.7v223H74.5V7.3h46.2v162.3z" fill="#b27214"></path><path d="M388 388c0-3-2.8-5.8-6-5.8H18c-3.2 0-6 2.7-6 6 0 3 2.8 5.8 6 5.8h364c3.2 0 6-2.7 6-6z" fill="#8b5e24"></path></g><g id="Layer1"></g></svg>
+        </section>
+        <section class="gap-2 w-full p-10 flex items-center flex-col">
+          <!-- <div class="w-16 h-[4px] bg-white"></div> -->
+          <nav class="test-word flex gap-2">
+            <!-- <div class="letra w-10 h-[4px]"></div>
+            <div class="letra w-10 h-[4px]"></div>
+            <div class="letra w-10 h-[4px]"></div> -->
+          </nav>
+          <nav class="receive-word flex gap-2"></nav>
+        </section>
+        <section class="flex flex-col gap-4">
+          <input maxlength="1" class="test border border-dashed bg-transparent w-[400px] h-12 text-2xl outline-none text-white text-zinc-400 px-4" type="text">
+          <button onclick="send()" class="border border-dashed border-black text-zinc-100 bg-[#0057DA] px-4 rounded font-semibold py-[10px] w-fit">Send!</button>
+        </section>
+    </main>
 
-  <body class="bg-black min-h-screen flex items-center justify-center bg-gradient-to-t from-[#000A18] to-black">
+
+    <!-- break -->
+
+
     <main
       class="max-w-[1920px] min-w-[1440px] items-center flex flex-col h-screen px-10"
     >
@@ -48,7 +94,7 @@
       </section>
 
 
-      <main class="w-[800px] flex gap-6 mt-10 flex-col">
+      <main class="w-[800px] flex gap-6 mt-6 flex-col">
         <section class="text-white flex flex-col w-[800px]">
             <span class="text-2xl font-semibold">
                 Escreva uma palavra para que seu adversário descubra!
